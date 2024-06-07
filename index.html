@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: rgb(228, 228, 228);
+    }
+  </style>
+</head>
+<body>
+
+
+
+<!-- Modal for Login -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Вход</h2>
+    <form id="loginForm">
+      <label for="loginUsername">Логин:</label>
+      <input type="text" id="loginUsername" name="username" required>
+      <label for="loginPassword">Пароль:</label>
+      <input type="password" id="loginPassword" name="password" required maxlength="10">
+      <button type="submit">Войти</button>
+    </form>
+    <p>Нет аккаунта? <a href="#" id="openRegisterModal">Зарегистрируйтесь</a></p>
+  </div>
+</div>
+
+<!-- Modal for Registration -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Регистрация</h2>
+    <form id="registerForm">
+      <label for="registerUsername">Логин:</label>
+      <input type="text" id="registerUsername" name="username" required>
+      <label for="registerPassword">Пароль:</label>
+      <input type="password" id="registerPassword" name="password" required maxlength="10">
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>
+
+
+  <div class="screen">
+    <div class="div">
+      <div class="view">
+        <div class="header-small">
+          <div class="overlap">
+            <div class="menu">
+              <div class="overlap-group">
+                <div class="text-wrapper">О компании</div>
+                <div class="text-wrapper-2">Доставка и оплата</div>
+                <div class="text-wrapper-3">Гарантии</div>
+                <div class="text-wrapper-4">Контакты</div>
+              </div>
+            </div>
+            <div class="phone">
+              <div class="text-wrapper-5">+7 (965) 237-44-49</div>
+              <img class="call" src="call.png" />
+            </div>
+            <div class="text-wrapper-6">Личный кабинет</div>
+            <div class="change-lang">
+              <div class="text-wrapper-7">Русский</div>
+              <img class="down-chevron" src="downarrow.png" />
+            </div>
+          </div>
+        </div>
+        <div class="header-main">
+          <img class="logo" src="nodoors.png" />
+          <div class="search">
+            <div class="overlap-2">
+              <div class="bg"></div>
+              <div class="text-wrapper-8">Введите поисковой запрос..</div>
+              <div class="btn-search">
+                <div class="overlap-group-2">
+                  <img class="icon" src="lupa.png" />
+                  <div class="text-wrapper-9">Найти</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="favorite">
+            <div class="text-wrapper-10">Избранное</div>
+            <div class="overlap-3">
+              <img class="img" src="heart.png" />
+              <div class="number">
+                <div class="div-wrapper"><div class="text-wrapper-11">4</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart">
+            
+            <div class="overlap-4">
+              <div class="text-wrapper-10">Избранное</div>
+              <img class="img" src="korzina.png" />
+              <div class="overlap-group-wrapper">
+                <div class="div-wrapper"><div class="text-wrapper-12">10</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="item">
+              <div class="text-wrapper-13">Apple</div>
+              <img class="down-chevron-2" src="img/image.svg" />
+            </div>
+            <div class="item-2">
+              <img class="down-chevron-3" src="img/down-chevron-2.svg" />
+              <div class="text-wrapper-13">Huawei</div>
+            </div>
+            <div class="item-3">
+              <img class="down-chevron-4" src="img/down-chevron-3.svg" />
+              <div class="text-wrapper-13">Xiaomi</div>
+            </div>
+            <div class="item-4">
+              <img class="down-chevron-5" src="img/down-chevron-4.svg" />
+              <div class="text-wrapper-13">Samsung</div>
+            </div>
+            <div class="text-wrapper-14">Питание и кабели</div>
+            <div class="text-wrapper-15">Powerbank</div>
+            <div class="text-wrapper-16">Акции</div>
+            <div class="text-wrapper-17">Прайс-лист</div>
+          </div>
+        </div>
+            <div class="cards-main">
+              <div class="card">
+                <div class="overlap-group-3">
+                  <img class="img-water" src="water.png">
+                  <img class="img-2" src="phones.png" />
+                  <p class="iphone-pro">Защитное стекло на<br />iPhone 11 Pro<br />по лучшей цене!</p>
+                  <button class="btn"><div class="text-wrapper-18">Подробнее</div></button>
+                  <div class="pagination">
+                    <div class="rectangle"></div>
+                    <div class="rectangle-2"></div>
+                    <div class="rectangle-3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="overlap-wrapper">
+                <div class="overlap-5">
+                  <img class="img-3" src="bluephone.png" />
+                  <div class="btn-secondary">
+                    <div class="text-wrapper-19">Подробнее</div>
+                    <img class="arrow" src="podrobnee.png" />
+                  </div>
+                  <div class="silicone-case-iphone">Silicone Case<br />для iPhone Xr</div>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="overlap-6">
+                  <div class="bg-2"></div>
+                  <img class="img-4" src="power.png" />
+                  <p class="powerbank-xiaomi">
+                    <span class="span">PowerBank от Xiaomi<br />на 10 800 мА</span>
+                    <span class="text-wrapper-20">•</span>
+                    <span class="span">ч</span>
+                  </p>
+                  <div class="btn-secondary-2">
+                    <div class="text-wrapper-19">Подробнее</div>
+                    <img class="arrow" src="podrobnee.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-2">
+            <div class="heading">
+              <div class="text-wrapper-21">Выберите бренд</div>
+              <div class="hr"></div>
+            </div>
+            <div class="card-3">
+              <div class="img-wrapper"><img class="img-5" src="apple.png" /></div>
+              <div class="text-wrapper-22">Apple</div>
+            </div>
+            <div class="card-4">
+              <div class="img-wrapper"><img class="img-6" src="huawei.png" /></div>
+              <div class="text-wrapper-23">Huawei</div>
+            </div>
+            <div class="overlap-7">
+              <div class="card-5">
+                <div class="overlap-8">
+                  <img class="img-7" src="xiaomi.png" /> <img class="cursor" src="img/cursor.png" />
+                </div>
+                <div class="btn-go">
+                  <div class="text-wrapper-24">Xiaomi</div>
+                  <img class="arrow-2" src="img/arrow-1.svg" />
+                </div>
+              </div>
+              <div class="card-6">  
+                <div class="overlap-9">
+                  <div class="card-7"></div>
+                  <div class="text-wrapper-25">Samsung</div>
+                  <img class="img-8" src="samsung1.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-3">
+            <div class="heading-2"><div class="text-wrapper-26">Популярные товары</div></div>
+            <div class="card-8">
+              <div class="overlap-10">
+                <img class="img-9" src="shleif.jpg" />
+                <div class="new"><div class="text-wrapper-27">Новинка</div></div>
+                <div class="new-2"><div class="text-wrapper-27">Скидка</div></div>
+                <div class="new-3"><div class="text-wrapper-27">Популярное</div></div>
+              </div>
+              <p class="p">iPhone 7 Plus Шлейф кнопки включения + Шлейф громкости Оригинал</p>
+              <div class="description">
+                <div class="text-wrapper-28">Розница:</div>
+                <div class="text-wrapper-29">950 ₽</div>
+                <div class="text-wrapper-30">Оптом (от 5 штук):</div>
+                <div class="text-wrapper-31">750 ₽</div>
+                <div class="text-wrapper-32">В наличии:</div>
+                <div class="text-wrapper-33">2536 шт.</div>
+              </div>
+              <div class="btn-cart"><div class="text-wrapper-34">В корзину</div></div>
+              <div class="quantity">
+                <div class="overlap-group-4"><div class="text-wrapper-35">- 96 +</div></div>
+              </div>
+            </div>
+            <div class="card-9">
+              <div class="overlap-11">
+                <img class="img-9" src="shleif.jpg" />
+                <div class="new-4"><div class="text-wrapper-27">Популярное</div></div>
+              </div>
+              <p class="p">iPhone 7 Plus Шлейф кнопки включения + Шлейф громкости Оригинал</p>
+              <div class="description">
+                <div class="text-wrapper-28">Розница:</div>
+                <div class="text-wrapper-29">950 ₽</div>
+                <div class="text-wrapper-30">Оптом (от 5 штук):</div>
+                <div class="text-wrapper-31">750 ₽</div>
+                <div class="text-wrapper-32">В наличии:</div>
+                <div class="text-wrapper-33">2536 шт.</div>
+              </div>
+              <div class="btn-cart"><div class="text-wrapper-34">В корзину</div></div>
+              <div class="quantity">
+                <div class="overlap-group-4"><div class="text-wrapper-35">- 96 +</div></div>
+              </div>
+            </div>
+            <div class="card-10">
+              <div class="overlap-12">
+                <img class="img-9" src="shleif.jpg" />
+                <div class="new-5"><div class="text-wrapper-27">Скидка</div></div>
+              </div>
+              <p class="p">iPhone 7 Plus Шлейф кнопки включения + Шлейф громкости Оригинал</p>
+              <div class="description">
+                <div class="text-wrapper-28">Розница:</div>
+                <p class="element">
+                  <span class="text-wrapper-36">950 ₽</span> <span class="text-wrapper-37">&nbsp;&nbsp; 850 ₽</span>
+                </p>
+                <div class="text-wrapper-30">Оптом (от 5 штук):</div>
+                <div class="text-wrapper-31">750 ₽</div>
+                <div class="text-wrapper-32">В наличии:</div>
+                <div class="text-wrapper-33">2536 шт.</div>
+              </div>
+              <div class="btn-cart"><div class="text-wrapper-34">В корзину</div></div>
+              <div class="quantity">
+                <div class="overlap-group-4"><div class="text-wrapper-35">- 96 +</div></div>
+              </div>
+            </div>
+            <div class="card-11">
+              <div class="overlap-13">
+                <img class="img-9" src="shleif.jpg" />
+                <div class="new"><div class="text-wrapper-27">Новинка</div></div>
+              </div>
+              <p class="p">iPhone 7 Plus Шлейф кнопки включения + Шлейф громкости Оригинал</p>
+              <div class="description">
+                <div class="text-wrapper-28">Розница:</div>
+                <div class="text-wrapper-29">950 ₽</div>
+                <div class="text-wrapper-30">Оптом (от 5 штук):</div>
+                <div class="text-wrapper-31">750 ₽</div>
+                <div class="text-wrapper-32">В наличии:</div>
+                <div class="text-wrapper-38">Нет в наличии</div>
+              </div>
+              <div class="btn-cart"><div class="text-wrapper-34">В корзину</div></div>
+              <div class="quantity">
+                <div class="overlap-group-4"><div class="text-wrapper-35">- 96 +</div></div>
+              </div>
+            </div>
+            <div class="right"><img class="next" src="rightarrow.png" /></div>
+            <div class="left"><img class="next-2" src="leftarrow.png" /></div>
+          </div>  
+          <div class="div-4">
+            <div class="card-12">
+              <div class="overlap-group-5">
+                <div class="text-wrapper-39">Достойные<br />оптовые цены</div>
+                <img class="img-10" src="cennik.png" />
+              </div>
+            </div>
+            <div class="card-13">
+              <div class="overlap-14">
+                <div class="element-2">Даём гарантию<br />от 1 года</div>
+                <img class="img-10" src="garantia.png" />
+              </div>
+            </div>
+            <div class="card-14">
+              <div class="overlap-group-5">
+                <div class="text-wrapper-40">Работаем напрямую<br />с производителями</div>
+                <img class="img-10" src="konveer.png" />
+              </div>
+            </div>
+            <div class="card-15">
+              <div class="overlap-group-5">
+                <div class="text-wrapper-41">Контроль качества<br />продукции</div>
+                <img class="img-10" src="almaz.png" />
+              </div>
+            </div>
+            <div class="card-16">
+              <div class="overlap-group-5">
+                <div class="text-wrapper-42">Процент брака<br />сведён к минимуму</div>
+                <img class="broken" src="cepi.png" />
+              </div>
+            </div>
+          </div>
+          <div class="SEO">
+            <div class="overlap-15">
+              <p class="text-wrapper-43">
+                No Doors Technology - продажа аксессуаров и запчастей для мобильных телефонов оптом
+              </p>
+              <p class="text-wrapper-44">
+                Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой
+                интересный эксперимент проверки существенных финансовых и административных условий. С другой стороны
+                укрепление и развитие структуры требуют от нас анализа новых предложений. Таким образом рамки и место
+                обучения кадров позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+                <br />
+                <br />Товарищи! дальнейшее развитие различных форм деятельности играет важную роль в формировании системы
+                обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный
+                количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации позиций,
+                занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало
+                повседневной работы по формированию позиции в значительной степени обуславливает создание дальнейших
+                направлений.
+              </p>
+            </div>
+          </div>
+          <div class="div-5">
+            <img class="rectangle-4" src="тетя.png" />
+            <img class="rectangle-5" src="3.jpg" />
+            <img class="rectangle-6" src="2.jpg" />
+            <img class="rectangle-7" src="4.jpg" />
+            <img class="rectangle-8" src="5.jpg" />
+            <img class="rectangle-9" src="6.jpg" />
+            <div class="view-2"></div>
+          </div>
+          
+          <div class="view-3">
+            <div class="overlap-16">
+              <img class="logo-2" src="nodoors.png" />
+              <div class="navigat">
+                <div class="text-wrapper-45">НАВИГАЦИЯ</div>
+                <div class="text-wrapper-46">О компании<br />Доставка и оплата<br />Гарантии<br />Контакты</div>
+              </div>
+              <div class="contacts">
+                <div class="text-wrapper-45">КОНТАКТЫ</div>
+                <div class="phone-2">
+                  <div class="text-wrapper-47">+7 (965) 237-44-49</div>
+                  <img class="call-2" src="img/call-1-2.svg" />
+                </div>
+                <div class="vk">
+                  <img class="img-11" src="img/vk-2-1.svg" />
+                  <div class="text-wrapper-48">vk.com/*long_link*</div>
+                </div>
+                <div class="vk-2">
+                  <div class="text-wrapper-48">@*long_nickname*</div>
+                  <img class="img-11" src="img/instagram-1-1.svg" />
+                </div>
+              </div>
+              <div class="payment">
+                <div class="text-wrapper-45">СПОСОБЫ ОПЛАТЫ</div>
+                <div class="view-4">
+                  <img class="logo-visa" src="visa.png" />
+                  <img class="logo-mastercard" src="mastercard.png" />
+                  <img class="logo-mir" src="mir.png" />
+                  <img class="logo-maestro" src="maestro.png" />
+                </div>
+              </div>
+              <div class="boomerang">
+                <div class="text-wrapper-49">РАЗРАБОТКА САЙТА</div>
+                <img class="logo-3" src="bumerang.png" />
+              </div>
+              <p class="text-wrapper-50">No Doors Technology © 2020</p>
+              <div class="text-wrapper-51">Политика конфиденциальности</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="back-to-top" class="back-to-top">Наверх</div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var backToTopButton = document.getElementById("back-to-top");
+    
+          window.addEventListener("scroll", function () {
+            if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+              backToTopButton.classList.add("show");
+            } else {
+              backToTopButton.classList.remove("show");
+            }
+          });
+    
+          backToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          });
+        });
+
+
+
+        
+
+
+        var currentDate = new Date();
+  document.write("Сегодняшняя дата: " + currentDate.toDateString());
+
+
+      </script>
+  <script src="praktika.js"></script>
+    </body>
+  </html>
